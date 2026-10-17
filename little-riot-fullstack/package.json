@@ -1,0 +1,14 @@
+{
+  "name": "little-riot-collective",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Little Riot Collective: kidswear store with Express + SQLite backend and admin panel",
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "create-admin": "node server/create-admin.js",
+    "test": "node --test server/test/shop.test.js"
+  },
+  "dependencies": { "better-sqlite3": "^12.0.0", "express": "^5.0.0" }
+}
